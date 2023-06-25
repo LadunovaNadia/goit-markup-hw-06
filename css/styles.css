@@ -6,12 +6,6 @@
     text-decoration: none;
 }
 
-.address-header {
-    font-style: normal;
-    margin-left: auto;
-}
-
-
 .body {
     font-family: var(--font-family);
     background-color: var(--white);
@@ -96,10 +90,7 @@ img {
     color: var(--navy-blue); 
 }
 
-.menu-list {
-display: flex; 
-gap: 40px; 
-}
+
 
 .page-navigation {
     display: flex;
@@ -118,6 +109,9 @@ gap: 40px;
 .menu-link {
     display: block;
     padding: 24px 0;
+}
+.menu-list {
+    display: none;
 }
 
 .menu-link:hover,
@@ -153,6 +147,10 @@ gap: 40px;
     box-sizing: border-box;
     box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
+
+.mobile-menu-open {
+    margin-left: auto;
+}
 /*===================/HEADER======================*/
 
 /*===================ADDRESS======================*/
@@ -177,11 +175,13 @@ gap: 40px;
 }
 
 .adr-header {
-    display: flex;
-    gap: 40px; 
+display: none;
 }
 
 /*===================/ADDRESS======================*/
+
+/*===================/MOBILE-MENU======================*/
+
 
 /*===================HERO_Sec1==================*/
 
@@ -194,10 +194,20 @@ gap: 40px;
     background-position: center;
     background-size: cover;
 }
+
+@media (min-device-pixel-ratio: 2),
+(min-resolution: 192dpi),
+(min-resolution: 2dppx) {
+.hero-main {
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), 
+    url(../images/desktop/people-office-2x.jpg);
+}
+}
+
 .hero-bg {
     padding: 188px 0;
-
 }
+
 .hero-text {
     margin: 0 auto;
     font-family: var(--font-family); 
@@ -212,6 +222,7 @@ gap: 40px;
 .hero-button {
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     border: none;
+    cursor: pointer;
     margin: 0 auto;
     display: block;
     font-family: var(--font-family);
@@ -229,7 +240,6 @@ gap: 40px;
     padding-bottom: 16px;
     padding-left: 32px;
     padding-right: 32px;
-    cursor: pointer
 }
 
 .hero-button:hover,

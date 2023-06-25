@@ -10,6 +10,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@800&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css" integrity="sha512-4xo8blKMVCiXpTaLzQSLSw3KFOVPWhm/TRtuPVc4WG6kUgjH6J03IBuG7JZPkcWMxJ5huwaBpOpnwYElP/m6wg==" crossorigin="anonymous" referrerpolicy="no-referrer">
     <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/media.css">
 </head>
 <body class="body">
   <!--header-->
@@ -26,6 +27,12 @@
         <a class="link menu-link last-link" href="">Contacts</a></li>
     </ul>
     </nav>
+<!--Button-Open-->
+    <button type="button" class="mobile-menu-open">
+      <svg class="mobile-menu-open_icon js-open-menu">
+        <use href="./images/icons.svg#icon-burger" width="32" height="22"></use>
+      </svg>
+    </button>
 <!--address-->
     <address class="address-header">
       <ul class="list adr-header">
@@ -38,6 +45,77 @@
       </ul>
     </address>
   </div>
+  <!--Mobile-menu-->
+  <div class="mobile-menu is-hidden js-menu-container">
+    <div class="mobile-menu-container">
+      <button type="button" 
+      class="mobile-menu-close-button js-close-menu">
+        <svg class="mobile-menu-close-icon">
+          <use href="./images/icons.svg#icon-vector" width="8" height="8"></use>
+        </svg>
+      </button>
+      <div>
+        <ul class="mob-menu-list list"> 
+          <li class="mob-menu-item link">
+            <a href="./index.html" class="link menu-link">Studio</a></li>
+          <li class="mob-menu-item link">
+            <a href="./portfolio.html" class="link menu-link">Portfolio</a></li>
+          <li class="mob-menu-item link">
+            <a class="link menu-link last-link" href="">Contacts</a></li>
+        </ul>
+      </div>
+  <div>
+    <address class="mob-menu-adress">
+      <ul class="list list-mob-adress">
+        <li class="link-mob-address">
+          <a class="link mob-menu-button-link" href="tel:+110001111111">+11 (000) 111-11-11</a>
+        </li>
+        <li class="link-mob-address">
+          <a class="link mob-menu-adress-link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+      </li>
+      </ul>
+    </address>
+      <ul class="mob-cos-list list">      
+        <li class="mob-cos-item">
+          <a class="mob-cos-links link" target="_blank" 
+          rel="noopener no-referrer" href=""
+          >
+          <svg class="mob-cos-svg" width="24" height="24">
+            <use href="./images/icons.svg#icon-instagram"></use>
+          </svg>
+          </a>
+        </li>
+        <li class="mob-cos-item">
+          <a class="mob-cos-links link" target="_blank" 
+          rel="noopener no-referrer" href=""
+          >
+          <svg class="mob-cos-svg" width="24" height="24">
+            <use href="./images/icons.svg#icon-twitter"></use>
+          </svg>
+        </a>
+      </li>
+        <li class="mob-cos-item">
+          <a class="mob-cos-links link" target="_blank" 
+          rel="noopener no-referrer" href=""
+          >
+          <svg class="mob-cos-svg" width="24" height="24">
+            <use href="./images/icons.svg#icon-facebook"></use>
+          </svg>
+        </a>
+      </li>
+        <li class="mob-cos-item">
+          <a class="mob-cos-links link" target="_blank" 
+          rel="noopener no-referrer" href=""
+          >
+          <svg class="mob-cos-svg" width="24" height="24">
+            <use href="./images/icons.svg#icon-linkedin"></use>
+          </svg>
+          </a>
+        </li>
+      </ul>
+    </div> 
+    </div>
+    </div>
   </header>
 <main>
   <!--hero-->
@@ -50,7 +128,7 @@
   </div>
   </section>
 <!--section2-->
-    <section class="strategy-section">
+    <!-- <section class="strategy-section">
       <div class="container section-cont">
       <h2 hidden class="visually-hidden">Our Strategy</h2>
       <ul class="list strategy-list">
@@ -93,26 +171,38 @@
         </li>
         </ul>
       </div>
-    </section>
+    </section> -->
 <!--section3-->
     <section class="section-gallery">
       <div class="container">
         <h2 class="headline-title">What are we doing</h2>
       <ul class="list galary-list">
         <li class="photo-item">
-          <img class="gallery-photo"
+          <img 
+          srcset="
+          ./images/comp.jpg 1x, 
+          ./images/desktop/comp-desk-2x.jpg 2x"
+          class="gallery-photo"
           src="./images/comp.jpg" 
           alt="computer"
           width="360">
         </li>
         <li class="photo-item">
-          <img class="gallery-photo"
+          <img 
+          srcset="
+          ./images/phone.jpg 1x, 
+          ./images/desktop/phone-desk-2x.jpg 2x "
+          class="gallery-photo"
           src="./images/phone.jpg" 
           alt="phone"
           width="360">
         </li>
         <li class="photo-item">
-          <img class="gallery-photo"
+          <img 
+          srcset="
+          ./images/phone1.jpg 1x, 
+          ./images/desktop/both-desk-2x.jpg 2x"
+          class="gallery-photo"
           src="./images/phone1.jpg" 
           alt="phone1" 
           width="360">
@@ -126,7 +216,24 @@
       <h2 class="headline-title">Our Team</h2>
     <ul class="team-list list">
       <li class="item-our-team">
-        <img class="photo-our-team" src="./images/mark.jpg" alt="mark-designer" width="264" >
+        <picture>
+          <source 
+          srcset="./images/mark.jpg 1x, 
+          ./images/desktop/mark-desk-2x.jpg 2x"
+          media="(min-width: 1158px)"
+          >
+          <source 
+          srcset="./images/tablet/mark-tab.jpg 1x,
+          ./images/tablet/mark-2x-tab.jpg 2x"
+          media="(min-width: 768px)"
+          >
+          <source 
+          srcset="./images/mob/mark-mob.jpg 1x, 
+          ./images/mob/mark-mob-2x.jpg 2x"
+          media="(min-width: 320px)"
+          >
+          <img class="photo-our-team" src="./images/mob/mark-mob.jpg" alt="mark-designer" width="264" >
+        </picture>
       <div class="block-team">
         <h3 class="heading-title top-text">Mark Guerrero</h3>
         <p class="subheading-title low-text">Product Designer</p>
@@ -171,7 +278,24 @@
     </div>
       </li>
       <li class="item-our-team">
-        <img class="photo-our-team" src="./images/tom.jpg" alt="tom_developer" width="264" >
+        <picture>
+          <source 
+          srcset="./images/tom.jpg 1x, 
+          ./images/desktop/tom-desk-2x.jpg 2x"
+          media="(min-width: 1158px)"
+          >
+          <source 
+          srcset="./images/tablet/tom-tab.jpg 1x,
+          ./images/tablet/tom-2x-tab.jpg 2x"
+          media="(min-width: 768px)"
+          >
+          <source 
+          srcset="./images/mob/tom-mob.jpg 1x, 
+          ./images/mob/tom-mob-2x.jpg 2x"
+          media="(min-width: 320px)"
+          >
+          <img class="photo-our-team" src="./images/mob/tom-mob.jpg" alt="tom_developer" width="264" >        
+        </picture>
           <div class="block-team">
             <h3 class="heading-title top-text">Tom Ford</h3>
               <p class="subheading-title low-text">Frontend Developer</p>
@@ -215,7 +339,24 @@
       </ul>
       </div>
       <li class="item-our-team">
-        <img class="photo-our-team" src="./images/camila.jpg" alt="camila_marketing" width="264" >
+        <picture>
+          <source 
+          srcset="./images/camila.jpg 1x, 
+          ./images/desktop/camila-desk-2x.jpg 2x"
+          media="(min-width: 1158px)"
+          >
+          <source 
+          srcset="./images/tablet/camila-tab.jpg 1x,
+          ./images/tablet/camila-2x-tab.jpg 2x"
+          media="(min-width: 768px)"
+          >
+          <source 
+          srcset="./images/mob/camila-mob.jpg 1x, 
+          ./images/mob/camila-2x-mob.jpg 2x"
+          media="(min-width: 320px)"
+          >
+          <img class="photo-our-team" src="./images/mob/camila-mob.jpg" alt="camila_marketing" width="264" >
+        </picture>
       <div class="block-team">
         <h3 class="heading-title top-text">Camila Garcia</h3>
       <p class="subheading-title low-text">Marketing</p>
@@ -260,7 +401,24 @@
     </div>
     </li>
       <li class="item-our-team">
-        <img class="photo-our-team" src="./images/daniel.jpg" alt="ui_designer" width="264" >
+        <picture>
+          <source 
+          srcset="./images/daniel.jpg 1x, 
+          ./images/desktop/daniel-desk-2x.jpg 2x"
+          media="(min-width: 1158px)"
+          >
+          <source 
+          srcset="./images/tablet/daniel-tab.jpg 1x,
+          ./images/tablet/daniel-2x-tab.jpg 2x"
+          media="(min-width: 768px)"
+          >
+          <source 
+          srcset="./images/mob/daniel-wilson-mob.jpg 1x, 
+          ./images/mob/daniel-wilson-2x-mob.jpg 2x"
+          media="(min-width: 320px)"
+          >
+          <img class="photo-our-team" src="./images/mob/daniel-wilson-mob.jpg" alt="ui_designer" width="264" >
+        </picture>
       <div class="block-team">
         <h3 class="heading-title top-text">Daniel Wilson</h3>
       <p class="subheading-title low-text">UI Designer</p>
@@ -320,7 +478,7 @@
   </div>
     </section>
     <!--section5 Customers-->
-    <section class="section-customers">
+    <!-- <section class="section-customers">
       <div class="container">
         <h2 class="customers-title">Customers</h2>
         <ul class="customers-list list">
@@ -368,10 +526,10 @@
           </li>
         </ul>
       </div>
-    </section>
+    </section> -->
   </main>
   <!--Footer-->
-  <footer class="footer-line">
+  <!-- <footer class="footer-line">
     <div class="container footer-container">
       <div class="foot-block">    
         <a href="./portfolio.html" 
@@ -422,9 +580,9 @@
         </a>
       </li>
 </ul>
-</div>
+</div> -->
 <!--Subscribe-->
-<div class="subscribe-cont">
+<!-- <div class="subscribe-cont">
   <p class="subscribe-text">Subscribe</p> 
     <form class="form-sbsc">
       <label for="foot-email" class="subscribe-label">
@@ -446,18 +604,18 @@
 </button>
 </form>
 </div>
-</div>
+</div> -->
 </footer>
 <!--Modal-window-->
-<div class="backdrop is-hidden" data-modal>
+<!-- <div class="backdrop is-hidden" data-modal>
   <div class="modal">
     <button type="button" class="modal-close" data-modal-close>
       <svg class="modal-close-icon" width="8" height="8">
         <use href="./images/icons.svg#icon-vector"></use>
       </svg>
-    </button>
+    </button> -->
 <!--Modal-Form-->
-  <p class="modal-title">Leave your contacts and we will call you back</p>
+  <!-- <p class="modal-title">Leave your contacts and we will call you back</p>
   <form class="modal-form">
     <div class="modal-field">
     <label for="user-name" class="input-label">
@@ -509,18 +667,18 @@
         <use href="./images/icons.svg#icon-email"></use>
       </svg>
     </div>
-</div>
+</div> -->
   <!--textarea-->
-<div class="modal-field-div">
+<!-- <div class="modal-field-div">
   <label for="user-comment" class="input-label">Comment</label>
   <textarea 
     id="user-comment"
       name="user-comment" 
         class="modal-comment" 
           placeholder="Text input"></textarea>
-</div>
+</div> -->
   <!--checkbox-->
-<div class="modal-field-privacy">
+<!-- <div class="modal-field-privacy">
   <input 
     type="checkbox" 
       id="user-privacy"
@@ -540,7 +698,8 @@
 <button type="submit" class="modal-form-submit">Send</button>
 </form>
   </div>
-</div>
-<script src="./js/modal.js"></script>
+</div> -->
+<!-- <script src="./js/modal.js"></script> -->
+<script src="./js/mobile-modal.js"></script>
 </body>
 </html>
