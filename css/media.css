@@ -175,7 +175,7 @@ img {
                 letter-spacing: 0.72px;
             }
         .mob-menu-adress-link {
-                display: block;
+            display: block;
             color:  #434455;
             font-size: 20px;
             font-family: var(--font-family);
