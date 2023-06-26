@@ -496,11 +496,11 @@ margin-bottom: 8px;
     column-gap: 24px;
 }
     }
-    .footer-line {
-        background-color:var(--navy-blue);
-        padding: 96px 0 96px;
-        margin: 0 auto;
-        }
+        .footer-line {
+            background-color:var(--navy-blue);
+            padding: 96px 0 96px;
+            margin: 0 auto;
+            }
 
         .logo-studio-footer {
             display: inline-block;
