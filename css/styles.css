@@ -49,6 +49,33 @@ img {
     padding-right: 15px;
     margin: 0 auto;
 }
+
+@media screen and (min-width: 428px) {
+    .container {
+        max-width: 398px;
+    } 
+}
+    
+@media screen and (min-width: 768px) {
+    .menu-list {
+        display: flex; 
+        gap: 40px; 
+    }
+    .page-navigation {
+        display: flex;
+    }
+    
+    .adr-header {
+        display: flex;
+    }
+    .hero-bg{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    }
+
 /*===================HEADER======================*/
 .logo {
     font-family: "Raleway", sans-serif;
@@ -100,6 +127,39 @@ img {
     margin: 0 auto;
 }
 
+@media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .hero-main {
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), 
+    url(../images/mob/hero-bg-mob-2x.jpg);
+        }
+        }
+
+@media screen and (min-width: 768px) {
+.hero-main {
+    background-color: var(--dark-background-color);
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+    ),
+    url(../images/tablet/hero-bg-tab.jpg);
+    max-width: 768px;
+    height: 436px;
+}
+
+@media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .hero-main {
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), 
+    url(../images/tablet/hero-bg-tab-2x.jpg);
+        }
+        }
+}
+
+
+
 .hero-text {
     margin: 0 auto;
     font-family: var(--font-weith-text);
@@ -111,8 +171,26 @@ img {
     max-width: 496px;
 }
 
+@media screen and (min-width: 768px) {
+.hero-text {
+color: var(--white);
+text-align: center;
+font-size: 56px;
+font-weight: 700;
+line-height: 1.07;
+letter-spacing: 1.12px;
+margin: 0 auto;
+}
+
+.hero-bg {
+    padding: 112px 0;
+}
+}
+
+
 .hero-button {
-    display: block;
+    display: flex;
+    text-align: center;
     transition: background-color var(--transition-dur-func);
     border: none;
     margin: 0 auto;
@@ -125,7 +203,7 @@ img {
     height: 56px;
     min-width: 169px;
 
-    text-align: center;
+    
     line-height: 1.50; 
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
@@ -145,6 +223,7 @@ img {
 }
 
 /* strategy-section */
+
 .icon-strategy {
     display: none;
 }
@@ -182,12 +261,77 @@ margin-bottom: 72px;
     margin-bottom: 72px;
 }
 
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+} 
+
+@media screen and (min-width: 768px) {
+    .strategy-section {
+        padding-top: 96px;
+        padding-bottom: 96px;
+    }
+
+    .section-cont{
+        display: flex;
+        flex-wrap: wrap;
+        column-gap: 24px;
+        row-gap: 72px;
+    }
+
+    .item-strategy {
+width: calc(100% - 24px) / 2;
+    }
+
+    
+}
+
+
 .section-our-team {
     background-color: var(--portfolio-btn);
     padding: 96px 0;
 }
 
-/* section-our-team */
+.page-header {
+    border-bottom: 1px solid #E7E9FC;
+    box-sizing: border-box;
+    box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
+}
+
+/* section-OUR-TEAM */
+@media screen and (min-width: 768px) {
+    .team-list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        row-gap: 64px;
+        gap: 24px;
+    }
+
+}
+
+@media screen and (min-width:768px) {
+    .container {
+        max-width: 726px;
+        padding-top: 24px;
+        padding-bottom: 24px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .item-strategy {
+        width: calc(100% - 24px) /2;
+    }
+}
+
 .team-top-text {
     margin-bottom: 72px;
     color: var(--navy-blue);
@@ -269,6 +413,7 @@ margin-bottom: 8px;
 .team-svg {
     fill: #F4F4FD;
 }
+
 
 /* CUSTOMERS */
 .section-customers {
