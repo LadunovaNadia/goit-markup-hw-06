@@ -181,12 +181,10 @@ line-height: 1.07;
 letter-spacing: 1.12px;
 margin: 0 auto;
 }
-
-.hero-bg {
-    padding: 112px 0;
+.hero-button {
+    margin-top: 36px;
 }
 }
-
 
 .hero-button {
     display: flex;
@@ -280,7 +278,10 @@ margin-bottom: 72px;
         padding-bottom: 96px;
     }
 
-    .section-cont{
+    .section-cont {
+    display: flex;
+}
+    .strategy-list {
         display: flex;
         flex-wrap: wrap;
         column-gap: 24px;
@@ -288,10 +289,8 @@ margin-bottom: 72px;
     }
 
     .item-strategy {
-width: calc(100% - 24px) / 2;
+    width: calc(100% - 24px) / 2;
     }
-
-    
 }
 
 
@@ -321,14 +320,20 @@ width: calc(100% - 24px) / 2;
 @media screen and (min-width:768px) {
     .container {
         max-width: 726px;
-        padding-top: 24px;
-        padding-bottom: 24px;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
+
     }
-    .item-strategy {
-        width: calc(100% - 24px) /2;
+    .team-list {
+    display: flex;
+    gap: 24px;
+}
+
+    .team-top-text {
+        margin: 0 auto;
+        margin-bottom: 72px;
+    }
+
+    .section-our-team {
+        padding: 96px 0 96px;
     }
 }
 
@@ -348,7 +353,6 @@ width: calc(100% - 24px) / 2;
     max-width: 264px;
     margin-left: auto;
     margin-right: auto;
-    width: 264px;
     border-radius: 0px 0px 4px 4px;
     background: var(--white, #FFF);
     box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 1px 6px 0px rgba(46, 47, 66, 0.08);
@@ -357,6 +361,7 @@ width: calc(100% - 24px) / 2;
 .item-our-team:not(:last-child) {
     margin-bottom: 72px;
 }
+
 
 .block-team {
     padding: 32px 16px;
@@ -462,14 +467,35 @@ margin-bottom: 8px;
         column-gap: 16px;
         row-gap: 72px;
     }
+    @media screen and (min-width:768px) {
+        .customers-item {
+            width: calc((100% - 24px) / 3);
+            height: 88px;
+            max-width: 168px;
+        }
 
+        .customers-list {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 24px;
+            column-gap: 16px;
+            row-gap: 72px;
+        }
+    }
     .customers-item {
         width: calc((100% - 16px) / 2);
         height: 88px;
     }
 
     /* FOOTER */
-
+    @media screen and (min-width:768px) {
+        .footer-container {
+    flex-wrap: wrap;
+    row-gap: 72px;
+    column-gap: 24px;
+}
+    }
     .footer-line {
         background-color:var(--navy-blue);
         padding: 96px 0 96px;
