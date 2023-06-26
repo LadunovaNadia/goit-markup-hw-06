@@ -65,6 +65,11 @@ max-width: 1158px;
 }
 }
 
+@media screen and (max-width: 1158px) { 
+    .section-gallery {
+        display: none;
+    }
+    }
 
 @media screen and (min-width: 428px) {
     .container {
@@ -323,7 +328,7 @@ margin: 0 auto;
     background: var(--hover);
 }
 
-/* strategy-section */
+/* STRATAGY-section */
 .strategy-section {
     padding-bottom: 96px;
     padding-top: 96px;
@@ -414,6 +419,22 @@ margin-bottom: 72px;
     box-sizing: border-box;
     box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
+/* section-GALLERY*/
+.galary-list {
+    display: flex;
+    gap: 24px;
+}
+
+.gallery-photo {
+    display: block;  
+    max-width: 100%; 
+    height: auto; 
+}
+
+.section-gallery {
+    padding-bottom: 120px; 
+}
+
 
 /* section-OUR-TEAM */
 @media screen and (min-width: 768px) {
