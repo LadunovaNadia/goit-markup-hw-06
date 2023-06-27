@@ -803,3 +803,24 @@ margin-bottom: 8px;
             height: 24px;
             margin-left: 16px;
         }
+
+/* <!--MOBILE_MENU--> */
+.mobile-menu-open {
+    display: inline-flex;
+    margin: 0;
+    padding: 0;
+    border: none;
+    background-color: transparent;
+}
+
+.mobile-menu-open .icon-x {
+display: none;
+}
+
+.mobile-menu-open .is-open .icon-x {
+    display: block;
+}
+
+.mobile-menu-open .is-open .icon-burger {
+    display: none;
+}
