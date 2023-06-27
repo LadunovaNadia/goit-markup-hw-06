@@ -805,15 +805,17 @@ margin-bottom: 8px;
         }
 
 /* <!--MOBILE_MENU--> */
-.mobile-menu-open {
+.menu-open-btn {
     display: inline-flex;
-    margin: 0;
+    justify-content: space-between;
     padding: 0;
     border: none;
     background-color: transparent;
 }
 
-.mobile-menu-open .icon-x {
+
+
+/* .mobile-menu-open .icon-x {
 display: none;
 }
 
@@ -823,4 +825,4 @@ display: none;
 
 .mobile-menu-open .is-open .icon-burger {
     display: none;
-}
+} */

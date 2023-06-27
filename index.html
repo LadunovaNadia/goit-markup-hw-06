@@ -26,7 +26,9 @@
         <a class="link menu-link last-link" href="">Contacts</a></li>
     </ul>
 <!--Button-Open-->
-    <button type="button" class="mobile-menu-open is-open">
+    <!-- <button type="button" 
+    aria-expanded="false"
+    class="mobile-menu-open is-open">
       <svg 
       width="32" 
       height="22" 
@@ -35,7 +37,7 @@
         <use class="icon-x js-close-menu" href="./images/icons.svg#icon-vector" width="8" height="8"></use>
       </svg>
     </button>
-    </nav>
+    </nav> -->
 <!--address-->
     <address class="address-header">
       <ul class="list adr-header">
@@ -47,10 +49,32 @@
       </li>
       </ul>
     </address>
+
+    <button 
+    type="button" 
+    class="menu-open-btn">
+      <svg 
+      width="32" 
+      height="22">
+        <use class="icon-burger" 
+        href="./images/icons.svg#icon-burger" 
+        stroke="black"></use>
+      </svg>
+    </button>
   </div>
   <!--Mobile-menu-->
-  <!-- <div class="mobile-menu is-hidden js-menu-container">
+  <div class="mobile-menu is-hidden">
     <div class="mobile-menu-container">
+      <button type="button" 
+      class="mobile-menu-close-button">
+        <svg 
+        width="8" 
+        height="8"
+        class="mobile-menu-close-icon">
+          <use class="icon-x" 
+          href="./images/icons.svg#icon-vector"></use>
+        </svg>
+      </button>
       <div>
         <ul class="mob-menu-list list"> 
           <li class="mob-menu-item link">
@@ -112,7 +136,7 @@
       </ul>
     </div> 
     </div>
-    </div> -->
+    </div>
   </header>
 <main>
   <!--hero-->
@@ -696,13 +720,13 @@
 </form>
   </div>
 </div> -->
-<script src="./js/modal.js"></script>
-<!-- <script
+<!-- <script src="./js/modal.js"></script> -->
+<script
 defer
 src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
 integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
 crossorigin="anonymous"
-></script> -->
+></script>
 <script defer src="js/mobile-modal.js"></script>
 </body>
 </html>
