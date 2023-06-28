@@ -25,19 +25,18 @@
       <li class="menu-item">
         <a class="link menu-link last-link" href="">Contacts</a></li>
     </ul>
-<!--Button-Open-->
-    <!-- <button type="button" 
-    aria-expanded="false"
-    class="mobile-menu-open is-open">
+    </nav>
+<!--Mobile-menu-BURGER-->
+    <button 
+    type="button" class="menu-open-btn" data-menu-open>
       <svg 
       width="32" 
-      height="22" 
-      aria-label="switch-mob-menu">
-        <use class="icon-burger js-open-menu" href="./images/icons.svg#icon-burger" stroke="black"></use>
-        <use class="icon-x js-close-menu" href="./images/icons.svg#icon-vector" width="8" height="8"></use>
+      height="22">
+        <use class="icon-burger" 
+        href="./images/icons.svg#icon-burger" 
+        stroke="black"></use>
       </svg>
     </button>
-    </nav> -->
 <!--address-->
     <address class="address-header">
       <ul class="list adr-header">
@@ -49,24 +48,12 @@
       </li>
       </ul>
     </address>
-
-    <button 
-    type="button" 
-    class="menu-open-btn">
-      <svg 
-      width="32" 
-      height="22">
-        <use class="icon-burger" 
-        href="./images/icons.svg#icon-burger" 
-        stroke="black"></use>
-      </svg>
-    </button>
-  </div>
-  <!--Mobile-menu-->
-  <div class="mobile-menu is-hidden">
+    </div>
+  <!--Mobile-BTN-X-->
+  <div class="mobile-menu is-hidden" data-menu>
     <div class="mobile-menu-container">
       <button type="button" 
-      class="mobile-menu-close-button">
+      class="mobile-close-button" data-menu-close>
         <svg 
         width="8" 
         height="8"
@@ -75,27 +62,31 @@
           href="./images/icons.svg#icon-vector"></use>
         </svg>
       </button>
-      <!-- <div>
+  <!-- MOBILE_NAVIGATION -->
+      <div class="div-mob-menu">
         <ul class="mob-menu-list list"> 
           <li class="mob-menu-item link">
-            <a href="./index.html" class="link menu-link">Studio</a></li>
+            <a href="./index.html" class="link mob-link current">Studio</a></li>
           <li class="mob-menu-item link">
-            <a href="./portfolio.html" class="link menu-link">Portfolio</a></li>
+            <a href="./portfolio.html" class="link mob-link">Portfolio</a></li>
           <li class="mob-menu-item link">
-            <a class="link menu-link last-link" href="">Contacts</a></li>
+            <a class="link mob-link last-link" href="">Contacts</a></li>
         </ul>
-      </div> -->
-  <!-- <div>
+      </div>
+      </div>
+  <!-- MOBILE_ADRESS -->
+    <div class="div-container-adress-cos">
     <address class="mob-menu-adress">
       <ul class="list list-mob-adress">
         <li class="link-mob-address">
-          <a class="link mob-menu-button-link" href="tel:+110001111111">+11 (000) 111-11-11</a>
+          <a class="link mob-tel-link" href="tel:+110001111111">+11 (000) 111-11-11</a>
         </li>
         <li class="link-mob-address">
-          <a class="link mob-menu-adress-link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+          <a class="link mob-email-link" href="mailto:info@devstudio.com">info@devstudio.com</a>
       </li>
       </ul>
     </address>
+  <!-- MOBILE_SOCIAL_LINKS -->
       <ul class="mob-cos-list list">      
         <li class="mob-cos-item">
           <a class="mob-cos-links link" target="_blank" 
@@ -134,12 +125,11 @@
           </a>
         </li>
       </ul>
-    </div>  -->
-    </div>
+    </div> 
     </div>
   </header>
 <main>
-  <!--hero-->
+  <!--HERO-->
   <section class="hero-main">
     <div class="container hero-bg">
     <h1 class="hero-text">Effective Solutions
@@ -628,15 +618,15 @@
 </div>
 </footer>
 <!--Modal-window-->
-<!-- <div class="backdrop is-hidden" data-modal>
+<div class="backdrop is-hidden" data-modal>
   <div class="modal">
     <button type="button" class="modal-close" data-modal-close>
       <svg class="modal-close-icon" width="8" height="8">
         <use href="./images/icons.svg#icon-vector"></use>
       </svg>
-    </button> -->
+    </button>
 <!--Modal-Form-->
-  <!-- <p class="modal-title">Leave your contacts and we will call you back</p>
+  <p class="modal-title">Leave your contacts and we will call you back</p>
   <form class="modal-form">
     <div class="modal-field">
     <label for="user-name" class="input-label">
@@ -688,18 +678,18 @@
         <use href="./images/icons.svg#icon-email"></use>
       </svg>
     </div>
-</div> -->
+</div>
   <!--textarea-->
-<!-- <div class="modal-field-div">
+<div class="modal-field-div">
   <label for="user-comment" class="input-label">Comment</label>
   <textarea 
     id="user-comment"
       name="user-comment" 
         class="modal-comment" 
           placeholder="Text input"></textarea>
-</div> -->
+</div>
   <!--checkbox-->
-<!-- <div class="modal-field-privacy">
+<div class="modal-field-privacy">
   <input 
     type="checkbox" 
       id="user-privacy"
@@ -719,14 +709,8 @@
 <button type="submit" class="modal-form-submit">Send</button>
 </form>
   </div>
-</div> -->
-<!-- <script src="./js/modal.js"></script> -->
-<script
-defer
-src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
-integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
-crossorigin="anonymous"
-></script>
-<script defer src="js/mobile-modal.js"></script>
+</div>
+<script src="./js/modal.js"></script>
+<script defer src="js/mobile-modal.js
 </body>
 </html>
