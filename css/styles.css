@@ -77,17 +77,18 @@ img {
     } 
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1158px) {
     .container {
-        max-width: 768px;
+    width: 1158px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto;
 }
 }
 
-@media screen and (min-width: 1158px) {
+@media screen and (min-width: 768px) {
     .container {
-        max-width: 1158px;
-        padding-left: 15px;
-        padding-right: 15px;
+        max-width: 768px;
 }
 }
 
@@ -128,7 +129,11 @@ img {
         justify-content: space-between;
     }
 /*===================HEADER======================*/
-
+/* @media screen and (min-width: 1158px) {
+.header-cont {
+justify-content: space-between;
+} 
+} */
 
 .logo {
     font-family: "Raleway", sans-serif;
