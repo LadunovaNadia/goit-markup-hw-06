@@ -25,10 +25,8 @@
       <li class="menu-item">
         <a class="link menu-link last-link" href="">Contacts</a></li>
     </ul>
-    </nav>
-<!--Mobile-menu-BURGER-->
     <button 
-    type="button" class="menu-open-btn" data-menu-open>
+    type="button" class="menu-open-btn js-open-menu">
       <svg 
       width="32" 
       height="22">
@@ -37,6 +35,9 @@
         stroke="black"></use>
       </svg>
     </button>
+    </nav>
+<!--Mobile-menu-BURGER-->
+
 <!--address-->
     <address class="address-header">
       <ul class="list adr-header">
@@ -50,10 +51,10 @@
     </address>
     </div>
   <!--Mobile-BTN-X-->
-  <div class="mobile-menu" data-menu>
+  <div class="mobile-menu js-menu-container">
     <div class="mobile-menu-container">
       <button type="button" 
-      class="mobile-close-button" data-menu-close>
+      class="mobile-close-button js-close-menu">
         <svg 
         width="8" 
         height="8"
@@ -134,7 +135,7 @@
     <div class="container hero-bg">
     <h1 class="hero-text">Effective Solutions
     for Your Business</h1>
-    <button type="button" class="hero-button" data-modal-open >Order Service
+    <button type="button" class="hero-button" data-modal-open>Order Service
     </button>
   </div>
   </section>
@@ -618,15 +619,15 @@
 </div>
 </footer>
 <!--Modal-window-->
-<!-- <div class="backdrop is-hidden" data-modal>
+<div class="backdrop is-hidden" data-modal>
   <div class="modal">
     <button type="button" class="modal-close" data-modal-close>
       <svg class="modal-close-icon" width="8" height="8">
         <use href="./images/icons.svg#icon-vector"></use>
       </svg>
-    </button> -->
+    </button>
 <!--Modal-Form-->
-  <!-- <p class="modal-title">Leave your contacts and we will call you back</p>
+  <p class="modal-title">Leave your contacts and we will call you back</p>
   <form class="modal-form">
     <div class="modal-field">
     <label for="user-name" class="input-label">
@@ -678,18 +679,18 @@
         <use href="./images/icons.svg#icon-email"></use>
       </svg>
     </div>
-</div> -->
+</div>
   <!--textarea-->
-<!-- <div class="modal-field-div">
+<div class="modal-field-div">
   <label for="user-comment" class="input-label">Comment</label>
   <textarea 
     id="user-comment"
       name="user-comment" 
         class="modal-comment" 
           placeholder="Text input"></textarea>
-</div> -->
+</div>
   <!--checkbox-->
-<!-- <div class="modal-field-privacy">
+<div class="modal-field-privacy">
   <input 
     type="checkbox" 
       id="user-privacy"
@@ -710,7 +711,7 @@
 </form>
   </div>
 </div>
-<script src="./js/modal.js"></script> -->
-<script defer src="js/mobile-modal.js
+<script src="./js/modal.js"></script>
+    <script defer src="js/mobile-modal.js"></script>
 </body>
 </html>
