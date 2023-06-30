@@ -57,6 +57,13 @@ img {
     margin: 0 auto;
 }
 
+@media screen and (max-width: 767px) {
+    .container {
+    min-width: 320px;
+    max-width: 428px;
+    }
+}
+
 
 @media screen and (max-width: 767px) { 
 .menu-list {
@@ -372,7 +379,7 @@ img {
 
 @media screen and (max-width: 767px) {
     .hero-text {
-        width: 320px;
+        max-width: 320px;
     }
 }
 @media screen and (min-width: 768px) {
@@ -1078,12 +1085,17 @@ gap: 16px;
     font-size: 12px;
     line-height: 1.5;
     letter-spacing: 0.48px;
+    padding-left: 16px;
     color: #FFFFFF;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
         
         } 
 
-
+@media screen and (max-width: 767px) {
+    .subscribe-email-btn {
+        max-width: 398px;
+    }
+}
 .send-subscribe {
     min-width: 165px;
     height: 40px;
