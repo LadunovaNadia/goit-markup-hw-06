@@ -49,6 +49,9 @@ img {
 --transition-dur-func:250ms cubic-bezier(0.4, 0, 0.2, 1)
 }
 
+.mobile-current {
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
 
 .container {
     width: 100%;
@@ -1119,6 +1122,9 @@ gap: 16px;
         }
 
 /* <!--MOBILE_MENU--> */
+.mob-link.mobile-current {
+color: var(--ocean);
+}
 
 .mobile-menu {
     position: fixed;
