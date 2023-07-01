@@ -1088,17 +1088,6 @@ margin-bottom: 16px;
     }
 /* subscribe */
 
-@media screen and (min-width: 428) {
-    .subscribe-label {
-        width: 398px;
-    }
-}
-
-@media screen and (min-width: 428px) {
-    .subscribe-email-btn {
-        width: 398px;
-    } 
-}
 
 @media screen and (max-width: 767px) { 
     .subscribe-email-btn {
@@ -1149,9 +1138,7 @@ margin-left: 0;
     align-items: center;
     }
 }
-.subscribe-label {
-    width: 264px;
-}
+
 
 .subscribe-text {
     font-weight: var(--font-weith-top);
@@ -1163,6 +1150,7 @@ margin-left: 0;
     }
 
 .subscribe-email-btn {
+    width: 100%;
     display: block;
     line-height: 1.5;
     background-color: transparent;
@@ -1179,6 +1167,27 @@ margin-left: 0;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
         
         } 
+.subscribe-label {
+    width: 100%;
+}
+
+@media screen and (min-width: 428px) {
+    .subscribe-email-btn {
+        width: 398px;
+    } 
+}
+
+@media screen and (min-width: 768px){
+.subscribe-email-btn {
+        width: 264px;
+    } 
+}
+
+@media screen and (min-width: 1158px) {
+.subscribe-email-btn {
+        width: 264px;
+    } 
+}
 
 .send-subscribe {
     background: #4D5AE5;
