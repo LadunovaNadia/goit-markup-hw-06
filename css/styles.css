@@ -160,13 +160,6 @@ img {
         justify-content: space-between;
     }
 
-    /* @media screen and (min-width: 1158px) {
-        .adr-header {
-            flex-direction: inherit;
-            gap: 40px;
-        }
-
-    } */
 /*===================HEADER======================*/
 
 @media screen and (max-width: 767px) {
@@ -182,13 +175,11 @@ img {
     box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 
-
 @media screen and (min-width: 1158px) {
     .logo { 
         margin-right: 76px;
 } 
 }
-
 
 .logo {
     font-family: "Raleway", sans-serif;
@@ -269,10 +260,9 @@ img {
         font-style: normal;
     }
 
-
     .modal-button {
         display: block;
-        margin: 0a;
+        margin: 0 auto;
     }
     
     .modal-button:hover,
@@ -290,6 +280,7 @@ img {
         font-style: normal;
     }
 }
+
 .hero-main {
     padding: 112px 0px 112px;
 }
@@ -547,12 +538,9 @@ letter-spacing: 0.32px;
         display: flex;
         align-items: center;
         justify-content: center;
+        margin-bottom: 8px;
         }
-
     }
-
-
-
 
 /* section-GALLERY*/
 
@@ -595,6 +583,14 @@ letter-spacing: 0.32px;
     height: auto; 
 }
 /* section-OUR-TEAM */
+.top-text {
+    margin-bottom: 8px;
+}
+
+.low-text {
+    margin-bottom: 8px;
+}
+
 
 @media screen and (max-width: 767px) {
 
@@ -719,6 +715,7 @@ letter-spacing: 0.32px;
     letter-spacing: 0.72px;
     text-transform: capitalize;
     text-align: left;
+    margin-bottom: 8px;
 }
 }
 
@@ -739,6 +736,7 @@ letter-spacing: 0.32px;
     .heading-title {
     display: flex;
     text-align: left;
+    margin-bottom: 8px;
     }
     
     .subheading-title {
@@ -755,7 +753,6 @@ letter-spacing: 0.32px;
         padding: 32px 16px;
         flex-direction: column;
         align-items: center;
-        gap: 8px;
     }
 }
 .team-cos-list {
@@ -1097,10 +1094,11 @@ margin-bottom: 16px;
     }
 }
 
-/* @media screen and (min-width: 428px)
-.subscribe-label {
-    width: 398px;
-} */
+@media screen and (min-width: 428px) {
+    .subscribe-email-btn {
+        width: 398px;
+    } 
+}
 
 @media screen and (max-width: 767px) { 
     .subscribe-email-btn {
@@ -1182,11 +1180,6 @@ margin-left: 0;
         
         } 
 
-@media screen and (max-width: 767px) {
-    .subscribe-email-btn {
-        max-width: 398px;
-    } 
-}
 .send-subscribe {
     background: #4D5AE5;
     padding: 0;        
