@@ -618,10 +618,6 @@ letter-spacing: 0.32px;
         flex-basis: calc((100% - 24px) / 3);
     }
 
-    .section-our-team {
-        padding: 120px 0 120px;
-    }
-
     .photo-our-team {
 
         display: block;
@@ -659,6 +655,13 @@ letter-spacing: 0.32px;
 .section-our-team {
         padding: 96px 0 96px;
     }
+
+@media screen and (min-width:1158px) {
+        .section-our-team {
+        padding: 120px 0 120px;
+    }
+}
+
 
 .team-top-text {
     margin-bottom: 72px;
@@ -743,6 +746,7 @@ letter-spacing: 0.32px;
     display: flex;
     text-align: left;
     max-width: 264px;
+    font-weight: 400;
     }
     }
 
