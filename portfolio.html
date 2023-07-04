@@ -9,7 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@800&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css" integrity="sha512-4xo8blKMVCiXpTaLzQSLSw3KFOVPWhm/TRtuPVc4WG6kUgjH6J03IBuG7JZPkcWMxJ5huwaBpOpnwYElP/m6wg==" crossorigin="anonymous" referrerpolicy="no-referrer">
-    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/portfolio.styles.css">
 </head>
 <body class="body">
 <!--header-->
@@ -25,6 +25,16 @@
         <li class="menu-item">
             <a class="link menu-link" href="">Contacts</a></li>
     </ul>
+    <button 
+    type="button" class="menu-open-btn js-open-menu">
+    <svg 
+    width="32" 
+    height="22">
+        <use class="icon-burger" 
+        href="./images/icons.svg#icon-burger" 
+        stroke="black"></use>
+    </svg>
+    </button>
     </nav>
 <!--address-->
     <address class="address-header">
@@ -37,6 +47,84 @@
         </li>
     </ul>
     </address>
+    </div>
+    <!--Mobile-BTN-X-->
+  <div class="mobile-menu js-menu-container">
+    <div class="mobile-menu-container">
+      <button type="button" 
+      class="mobile-close-button js-close-menu">
+        <svg 
+        width="8" 
+        height="8"
+        class="mobile-menu-close-icon">
+          <use class="icon-x" 
+          href="./images/icons.svg#icon-vector"></use>
+        </svg>
+      </button>
+  <!-- MOBILE_NAVIGATION -->
+      <div class="div-mob-menu">
+        <ul class="mob-menu-list list"> 
+          <li class="mob-menu-item link">
+            <a href="./index.html" class="link mob-link mobile-current">Studio</a></li>
+          <li class="mob-menu-item link">
+            <a href="./portfolio.html" class="link mob-link">Portfolio</a></li>
+          <li class="mob-menu-item link">
+            <a class="link mob-link last-link" href="">Contacts</a></li>
+        </ul>
+      </div>
+      </div>
+  <!-- MOBILE_ADRESS -->
+    <div class="div-container-adress-cos">
+    <address class="mob-menu-adress">
+      <ul class="list list-mob-adress">
+        <li class="link-mob-address">
+          <a class="link mob-tel-link phone-numb" href="tel:+110001111111">+11 (000) 111-11-11</a>
+        </li>
+        <li class="link-mob-address">
+          <a class="link mob-email-link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+      </li>
+      </ul>
+    </address>
+  <!-- MOBILE_SOCIAL_LINKS -->
+      <ul class="mob-cos-list list">      
+        <li class="mob-cos-item">
+          <a class="mob-cos-links link" target="_blank" 
+          rel="noopener no-referrer" href=""
+          >
+          <svg class="mob-cos-svg" width="24" height="24">
+            <use href="./images/icons.svg#icon-instagram"></use>
+          </svg>
+          </a>
+        </li>
+        <li class="mob-cos-item">
+          <a class="mob-cos-links link" target="_blank" 
+          rel="noopener no-referrer" href=""
+          >
+          <svg class="mob-cos-svg" width="24" height="24">
+            <use href="./images/icons.svg#icon-twitter"></use>
+          </svg>
+        </a>
+      </li>
+        <li class="mob-cos-item">
+          <a class="mob-cos-links link" target="_blank" 
+          rel="noopener no-referrer" href=""
+          >
+          <svg class="mob-cos-svg" width="24" height="24">
+            <use href="./images/icons.svg#icon-facebook"></use>
+          </svg>
+        </a>
+      </li>
+        <li class="mob-cos-item">
+          <a class="mob-cos-links link" target="_blank" 
+          rel="noopener no-referrer" href=""
+          >
+          <svg class="mob-cos-svg" width="24" height="24">
+            <use href="./images/icons.svg#icon-linkedin"></use>
+          </svg>
+          </a>
+        </li>
+      </ul>
+    </div> 
     </div>
 </header>  
 <!-- Portfolio -->
@@ -66,10 +154,11 @@
         <a class="link link-block" href="">
             <div class="img-portfolio-wrapper">
                 <img class="img-portfolio" src="./images/section1/banking.jpg" alt="Banking App" width="360" height="300">
-                <p class="overlay">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App</p></div>
+                <p class="overlay">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App</p>
+            </div>
             <div class="portfolio-photo">
-                <h2 class="heading-title">Banking App Interface Concept</h2>
-                <p class="subheading-title">App</p>
+                <h2 class="heading-title font-galary">Banking App Interface Concept</h2>
+                <p class="subheading-title sub-galary">App</p>
             </div>
         </a>
     </li>
@@ -80,8 +169,8 @@
                 <p class="overlay">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App</p>
         </div>
                 <div class="portfolio-photo">
-                <h2 class="heading-title">Cashless Payment</h2>
-                <p class="subheading-title">Marketing</p>
+                <h2 class="heading-title font-galary">Cashless Payment</h2>
+                <p class="subheading-title sub-galary">Marketing</p>
         </div> 
         </a>
     </li>
@@ -92,8 +181,8 @@
                 <p class="overlay">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App</p>
             </div>
             <div class="portfolio-photo">
-                <h2 class="heading-title">Meditation App</h2>
-                <p class="subheading-title">App</p>
+                <h2 class="heading-title font-galary">Meditation App</h2>
+                <p class="subheading-title sub-galary">App</p>
             </div>
         </a>
         
@@ -105,8 +194,8 @@
                 <p class="overlay">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App</p>
             </div>
             <div class="portfolio-photo">
-                <h2 class="heading-title">Taxi Service</h2>
-                <p class="subheading-title">Marketing</p>
+                <h2 class="heading-title font-galary">Taxi Service</h2>
+                <p class="subheading-title sub-galary">Marketing</p>
             </div>  
         </a>
     </li>
@@ -117,8 +206,8 @@
                 <p class="overlay">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App</p>
             </div>
             <div class="portfolio-photo">
-                <h2 class="heading-title">Screen Illustrations</h2>
-                <p class="subheading-title">Design</p>
+                <h2 class="heading-title font-galary">Screen Illustrations</h2>
+                <p class="subheading-title sub-galary">Design</p>
             </div>
         </a>
     </li>
@@ -129,8 +218,8 @@
                 <p class="overlay">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App</p>
             </div>
             <div class="portfolio-photo">
-                <h2 class="heading-title">Online Courses</h2>
-                <p class="subheading-title">Marketing</p>
+                <h2 class="heading-title font-galary">Online Courses</h2>
+                <p class="subheading-title sub-galary">Marketing</p>
             </div>
         </a>
     </li>
@@ -141,8 +230,8 @@
             <p class="overlay">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App</p>
             </div>
             <div class="portfolio-photo">
-                <h2 class="heading-title">Instagram Stories Concept</h2>
-                <p class="subheading-title">Design</p>
+                <h2 class="heading-title font-galary">Instagram Stories Concept</h2>
+                <p class="subheading-title sub-galary">Design</p>
             </div>
         </a>
     </li>
@@ -153,8 +242,8 @@
             <p class="overlay">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App</p>
             </div>
             <div class="portfolio-photo">
-                <h2 class="heading-title">Organic Food</h2>
-                <p class="subheading-title">Web Site</p>
+                <h2 class="heading-title font-galary">Organic Food</h2>
+                <p class="subheading-title sub-galary">Web Site</p>
             </div>
         </a>
     </li>
@@ -165,8 +254,8 @@
             <p class="overlay">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App</p>
             </div>
             <div class="portfolio-photo">
-                <h2 class="heading-title">Fresh Coffee</h2>
-                <p class="subheading-title">Web Site</p>
+                <h2 class="heading-title font-galary">Fresh Coffee</h2>
+                <p class="subheading-title sub-galary">Web Site</p>
             </div>
         </a>
     </li>
@@ -252,5 +341,6 @@
 </div>
 </div>
 </footer>
+    <script defer src="js/mobile-modal.js"></script>
 </body>
 </html>
